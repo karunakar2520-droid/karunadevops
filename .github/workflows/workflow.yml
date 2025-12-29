@@ -14,7 +14,6 @@ jobs:
       java-version:  17
       distribution: microsoft
    - name: Maven build
-     working-directory: backend 
      run: mvn --batch-mode --update-snapshots verify
    - name: copy the target
      run: mkdir staging && cp target/*.jar staging
